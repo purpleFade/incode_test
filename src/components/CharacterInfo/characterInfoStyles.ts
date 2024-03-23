@@ -7,6 +7,8 @@ export const styles = StyleSheet.create({
 
     borderRightWidth: 1,
     borderRightColor: '#ccc',
+
+    color: '#000',
   },
   columnText: {
     flexWrap: 'wrap',

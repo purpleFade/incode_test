@@ -1,4 +1,4 @@
-import { Species } from './Species';
+import {Species} from './Species';
 
 export type Character = {
   name: string;

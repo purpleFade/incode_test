@@ -1,44 +1,48 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
-    display: 'flex',
+    flex: 1,
     flexDirection: 'column',
-
     paddingHorizontal: 10,
+    backgroundColor: '#f0f0f0',
+
+    color: '#000',
   },
   searchContainer: {
-    display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-
-    gap: 10,
+    marginBottom: 10,
   },
   columnNames: {
-    display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 10,
-
+    paddingVertical: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
   },
   columnElement: {
     flex: 1,
     marginRight: 5,
-
     borderRightWidth: 1,
     borderRightColor: '#ccc',
+    padding: 10,
+    justifyContent: 'center',
   },
   searchInput: {
     flex: 1,
-    padding: 5,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 5,
+    backgroundColor: '#fff',
   },
   header: {
     marginTop: 10,
-    fontSize: 30,
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#333', // Header text color
+    textAlign: 'center', // Center header text
   },
 });

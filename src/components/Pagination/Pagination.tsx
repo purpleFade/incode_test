@@ -12,8 +12,9 @@ type Props = {
 
 const Pagination: React.FC<Props> = ({items}) => {
   const dispatch = useAppDispatch();
-  const {totalItems, next, previous, currentPage} =
-    useAppSelector(state => state.swapi);
+  const {totalItems, next, previous, currentPage} = useAppSelector(
+    state => state.swapi,
+  );
 
   const itemsPerPageLength = items.length;
   const startItem = (currentPage - 1) * itemsPerPageLength + 1;

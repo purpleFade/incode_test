@@ -22,6 +22,7 @@ const FansComponent = () => {
   const handleResetFans = () => {
     dispatch(fansActions.resetFan());
   };
+
   return (
     <View style={styles.container}>
       <View style={styles.fansBlock}>

@@ -48,7 +48,7 @@ const swapiSlice = createSlice({
     },
     setCurrentPage: (state, action: PayloadAction<number>) => {
       state.currentPage = action.payload;
-    }
+    },
   },
   extraReducers: builder => {
     builder.addCase(swapiInit.pending, state => {
@@ -62,14 +62,13 @@ const swapiSlice = createSlice({
       state.previous = action.payload.previous;
       state.results = action.payload.results;
     });
-    builder.addCase(swapiInit.rejected, (state) => {
+    builder.addCase(swapiInit.rejected, state => {
       state.loading = false;
       state.error = 'Error fetching data';
     });
   },
 });
 
-export const {nextPage, previousPage, setCurrentPage} =
-  swapiSlice.actions;
+export const {nextPage, previousPage, setCurrentPage} = swapiSlice.actions;
 
 export default swapiSlice.reducer;

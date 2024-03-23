@@ -21,7 +21,7 @@ const fansSlicer = createSlice({
     },
     resetFan: state => {
       state.fans = [];
-    }
+    },
   },
 });
 
