@@ -1,8 +1,26 @@
+# Star Wars Favorites Mobile Application
+
+This mobile application, built using React Native, allows users to indicate their favorite characters from the Star Wars Universe and view the total count of male, female, and other characters based on user selections. The application fetches data from the Star Wars API (https://swapi.py4e.com/) to populate the list of characters.
+
+## Technologies Used
+
+- React Native
+- React JS
+- TypeScript
+- Redux Toolkit
+- Redux Async Thunk
+
+## Features
+
+- **API Integration**: Makes API requests to retrieve character information from the server.
+- **Character List**: Displays a scrollable and paginated list of Star Wars characters.
+- **Favorites**: Allows users to mark characters as favorites, updating the total count of male, female, and other characters accordingly.
+- **Total Counts**: Displays the total amounts of male, female, and other characters based on user selections.
+- **Reset**: Provides a button to reset all statistics and clear the favorites list, returning everything to the initial state.
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
-
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
